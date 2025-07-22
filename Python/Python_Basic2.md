@@ -237,6 +237,18 @@
 
 [가변 객체, 불변 객체](https://docs.python.org/ko/3.13/reference/datamodel.html)
 
+※ 얕은 복사  
+copy.()
+
+![얕은 복사](../image/얕은복사.png)
+
+※ 깊은 복사  
+import copy  
+copy.deepcopy(변수명)
+
+![깊은 복사](../image/깊은복사.png)
+
+
 ## 형변환 (Type Conversion)
 
 한 데이터 타입을 다른 데이터 타입으로 변환하는 과정
