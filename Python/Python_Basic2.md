@@ -239,13 +239,59 @@
 
 ※ 얕은 복사  
 copy.()
+```
+catalog = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [9, 10, 11],
+]
 
+backup_catalog = catalog.copy()
+
+
+catalog[3] = [12, 13, 14]
+print('catalog와 backup_catalog를 비교한 결과')
+
+print(catalog is backup_catalog)
+
+print('backup_catalog : ')
+print(backup_catalog)
+print()
+
+print('catalog : ')
+print(catalog)
+```
 ![얕은 복사](../image/얕은복사.png)
 
 ※ 깊은 복사  
 import copy  
 copy.deepcopy(변수명)
+```
+import copy
 
+catalog = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [9, 10, 11],
+]
+
+backup_catalog = copy.deepcopy(catalog)
+
+
+catalog[3] = [12, 13, 14]
+print('catalog와 backup_catalog를 비교한 결과')
+
+print(catalog is backup_catalog)
+
+print('backup_catalog : ')
+print(backup_catalog)
+print()
+
+print('catalog : ')
+print(catalog)
+```
 ![깊은 복사](../image/깊은복사.png)
 
 
